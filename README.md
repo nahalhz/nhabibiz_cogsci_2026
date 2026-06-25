@@ -8,11 +8,10 @@ Note: this repository builds on the Dynamic Neural Field basal ganglia (DNF-BG) 
 
 ## Replicate Experiments
 
-The following instructions are to be run from a terminal after navigating to the `experiments` directory on your machine.
 
 **Study 1: Parkinsonian Freezing Model**
 1. Run the grid search over thalamic threshold ($\theta$) and DNF scaling factor ($\alpha$) across healthy and dopamine-depleted conditions and get the results as a csv  — `>> python study1.py`
-2. Generate results tables/csv files saved as — ` study2_results.csv`
+2. Generate results tables/csv files saved as — ` study1_results.csv`
 
 **Study 2: Deep Brain Stimulation Exploratory Study**
 3. Run the DBS grid search over STN ($w_t$) and GPi ($w_p$) scaling, repeated across $n=20$ experiments per configuration — `>> python study2.py`
@@ -20,7 +19,7 @@ The following instructions are to be run from a terminal after navigating to the
 
 You will be prompted to provide the paths to the data and to the figures. Data will be saved as npz files and then as csv files. The csv files will be accessed for analysis and plotting.
 
-All heatmaps and figures reported in the paper (selection-ratio heatmap, top-configuration bar/box plots, DBS success heatmap, and DBS comparison bar plot) are generated in the `results_produced.ipynb` notebook, which loads the csv files produced above. Figures will be saved as pngs.
+All heatmaps and figures reported in the paper (selection-ratio heatmap, top-configuration bar/box plots, DBS success heatmap, and DBS comparison bar plot) are generated in the `results_produced.ipynb` notebook, which loads the csv files produced above.
 
 ## Networks
 
@@ -28,17 +27,14 @@ The networks include the thalamic gating mechanism implemented using `nengo.netw
 
 We coupled this thalamic network to the DNF-BG model (striatal D1/D2, STN, GPe, GPi populations) to enable explicit measurement of action gating success, and introduced a global DNF scaling parameter ($\alpha$) and DBS afferent-scaling parameters ($w_t$, $w_p$) to model dopamine depletion and stimulation effects, respectively.
 
-## Reference
+---
 
 To cite this project please use:
-'''@article{habibizadeh2026modeling,
-
-title={Modeling Parkinsonian Freezing and Deep Brain Stimulation Effects in a Basal Ganglia Network},
-
-author={Habibizadeh, Nahal and Bartlett, Madeleine},
-
-journal={bioRxiv},
-
-year={2026}
-
-}'''
+```bibtex
+@article{habibizadeh2026modeling,
+  title={Modeling Parkinsonian Freezing and Deep Brain Stimulation Effects in a Basal Ganglia Network},
+  author={Habibizadeh, Nahal and Bartlett, Madeleine},
+  journal={bioRxiv},
+  year={2026}
+}
+```
