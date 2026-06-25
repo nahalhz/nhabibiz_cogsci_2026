@@ -1,5 +1,3 @@
-# nhabibiz_cogsci_2026
-
 # Modeling Parkinsonian Freezing and DBS Effects in a Basal Ganglia Network
 
 This repository contains the scripts and code used in the experiments reported in Habibizadeh, N. & Bartlett, M. (2026). *Modeling Parkinsonian Freezing and Deep Brain Stimulation Effects in a Basal Ganglia Network*. Preprint available on bioRxiv.
