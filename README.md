@@ -10,11 +10,11 @@ Note: this repository builds on the Dynamic Neural Field basal ganglia (DNF-BG) 
 
 
 **Study 1: Parkinsonian Freezing Model**
-1. Run the grid search over thalamic threshold ($\theta$) and DNF scaling factor ($\alpha$) across healthy and dopamine-depleted conditions and get the results as a csv  — `>> python study1.py`
+1. Run the grid search over thalamic threshold ($\theta$) and DNF scaling factor ($\alpha$) across healthy and dopamine-depleted conditions and get the results as a csv  — `>> python run_study1.py`
 2. Generate results tables/csv files saved as — ` study1_results.csv`
 
 **Study 2: Deep Brain Stimulation Exploratory Study**
-3. Run the DBS grid search over STN ($w_t$) and GPi ($w_p$) scaling, repeated across $n=20$ experiments per configuration — `>> python study2.py`
+3. Run the DBS grid search over STN ($w_t$) and GPi ($w_p$) scaling, repeated across $n=20$ experiments per configuration — `>> python run_study2.py`
 4. Generate results tables/csv files saved as — ` study2_results.csv`
 
 You will be prompted to provide the paths to the data and to the figures. Data will be saved as npz files and then as csv files. The csv files will be accessed for analysis and plotting.
